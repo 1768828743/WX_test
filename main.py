@@ -36,6 +36,7 @@ def get_birthday():
 
 def get_words():
   words = requests.get("https://api.shadiao.pro/chp")
+  #ceshi
   if words.status_code != 200:
     return get_words()
   return words.json()['data']['text']
